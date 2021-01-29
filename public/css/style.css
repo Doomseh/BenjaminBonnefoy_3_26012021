@@ -64,7 +64,7 @@ header .logo {
 
 /* Fonctionnement */
 .fonctionnement {
-  padding: 30px 10px;
+  padding: 30px 20px;
 }
 .fonctionnement H2 {
   font-size: 1.7em;
@@ -103,6 +103,83 @@ header .logo {
 .step_list p {
   font-size: 1.2em;
   font-weight: 700;
+}
+
+/* Restaurants */
+.restaurants {
+  background-color: #F2F2F2;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.restaurants--height {
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.choice {
+  width: 100%;
+  text-decoration: none;
+  color: black;
+}
+.choice_img {
+  height: 72%;
+  width: 100%;
+}
+.choice_img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+.choice_info {
+  height: 28%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0px 0px 20px 20px;
+}
+.choice_info H3 {
+  margin: 0px 0px 0px 10px;
+  font-weight: 900;
+}
+.choice_info p {
+  margin: 5px 10px;
+  font-weight: 300;
+}
+.choice_info--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.choice_info--i {
+  display: flex;
+  align-self: center;
+  margin-right: 20px;
+}
+.choice_info--i i {
+  font-size: 1.6em;
+}
+
+/* Footer */
+.footer {
+  padding: 30px 20px;
+  background-color: #353535;
+  color: white;
+}
+.footer_title {
+  margin: 0px;
+  font-family: "shrikhand", sans-serif;
+  font-weight: lighter;
+  font-size: 1.3em;
+}
+.footer ul {
+  padding: 0px;
+}
+.footer li {
+  list-style: none;
+  margin: 10px 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
