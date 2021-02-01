@@ -10,3 +10,31 @@ body {
 .container {
     width: 100%;
 }
+
+/* Footer */
+
+.footer {
+    padding: 30px 20px;
+    background-color: rgb(53, 53, 53);
+    color: white;
+    &_title {
+        margin: 0px;
+        font-family: "shrikhand", sans-serif;
+        font-weight: lighter;
+        font-size: 1.3em;
+        &-i2 {
+            font-size: 0.8em;
+            margin-right: 7px;
+        }
+        &-i1 {
+            margin-right: 10px;
+        }
+    }
+    ul {
+        padding: 0px;
+    }
+    li {
+        list-style: none;
+        margin: 10px 0px;
+    }
+}
