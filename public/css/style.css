@@ -45,7 +45,7 @@ header {
   padding: 10px;
 }
 header .logo {
-  width: 50%;
+  height: 40px;
 }
 
 .localisation {
@@ -108,6 +108,7 @@ header .logo {
   padding-left: 10px;
 }
 .step_list {
+  position: relative;
   background-color: #F2F2F2;
   display: flex;
   align-items: center;
@@ -122,11 +123,11 @@ header .logo {
   color: white;
   background-color: #9356DC;
   padding: 5px 10px;
-  margin: 0px;
+  margin: 0px 0px 0px -15px;
   border-radius: 30px;
   font-size: 0.9em;
   position: absolute;
-  left: 4%;
+  left: 0px;
 }
 .step_list i {
   opacity: 0.5;
@@ -228,19 +229,20 @@ header .logo {
 /* Header Menu */
 .header {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 .header_arrow {
   position: absolute;
   font-size: 1.3em;
   left: 0%;
-  top: 0%;
+  top: 5%;
   padding: 15px 20px;
   text-decoration: none;
   color: black;
 }
 .header_logo {
-  font-size: 1em;
-  width: 50%;
+  height: 40px;
 }
 
 .main {

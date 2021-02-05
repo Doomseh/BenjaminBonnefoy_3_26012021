@@ -2,18 +2,19 @@
 
 .header {
     position: relative;
+    display: flex;
+    justify-content: center;
     &_arrow {
         position: absolute;
         font-size: 1.3em;
         left: 0%;
-        top: 0%;  
+        top: 5%;  
         padding: 15px 20px;
         text-decoration: none;
         color: black;
     }
     &_logo {
-        font-size: 1em;
-        width: 50%;
+        height: 40px;
     }
 }
 

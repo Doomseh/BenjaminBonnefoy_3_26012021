@@ -4,7 +4,7 @@ header {
     text-align: center;
     padding: 10px;
     .logo {
-        width: 50%;
+        height: 40px;
     }
 }
 
@@ -69,6 +69,7 @@ header {
     justify-content: space-between;
     padding-left: 10px;
     &_list {
+        position: relative;
         background-color: $color-background;
         display: flex;
         align-items: center;
@@ -82,11 +83,11 @@ header {
             color: white;
             background-color: $color-primary;
             padding: 5px 10px;
-            margin: 0px;
+            margin: 0px 0px 0px -15px;
             border-radius: 30px;
             font-size: 0.9em;
             position: absolute;
-            left: 4%;
+            left: 0px;
         }
         i {
             opacity: 0.5;
