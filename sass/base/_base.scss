@@ -38,3 +38,15 @@ body {
         margin: 10px 0px;
     }
 }
+
+@media all and (min-width: 750px) {
+    .footer {
+        text-align: center;
+        font-size: 1.2em;
+    }
+}
+@media all and (min-width: 1020px) {
+    .footer {
+        font-size: 1.4em;
+    }
+}

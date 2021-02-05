@@ -39,6 +39,17 @@ body {
   margin: 10px 0px;
 }
 
+@media all and (min-width: 750px) {
+  .footer {
+    text-align: center;
+    font-size: 1.2em;
+  }
+}
+@media all and (min-width: 1020px) {
+  .footer {
+    font-size: 1.4em;
+  }
+}
 /* Header */
 header {
   text-align: center;
@@ -253,12 +264,6 @@ header .logo {
     width: 48%;
     margin-bottom: 30px;
   }
-
-  /* Footer Tablette */
-  .footer {
-    text-align: center;
-    font-size: 1.2em;
-  }
 }
 /* CSS Desktop */
 @media all and (min-width: 1020px) {
@@ -279,10 +284,6 @@ header .logo {
   }
   .choice_info {
     height: 20%;
-  }
-
-  .footer {
-    font-size: 1.4em;
   }
 }
 @media all and (min-width: 1250px) {
@@ -311,7 +312,7 @@ header .logo {
 
 .main {
   background-color: #F2F2F2;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 20px 20px 20px;
 }
 
 /* Background Menu */
@@ -349,7 +350,7 @@ header .logo {
 }
 
 /* Menu */
-.menu {
+.menu_block {
   margin-top: 20px;
 }
 .menu_title {
@@ -398,6 +399,7 @@ header .logo {
 .bottom {
   display: flex;
   justify-content: center;
+  background-color: #F2F2F2;
 }
 .bottom_btn {
   font-size: 1em;
@@ -409,6 +411,68 @@ header .logo {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 0px 5px 5px 2px lightgray;
   cursor: pointer;
+}
+
+/* CSS Tablette */
+@media all and (min-width: 750px) {
+  .background_img {
+    height: 400px;
+  }
+  .background_img-size {
+    object-position: 50% 70%;
+  }
+  .background_title {
+    padding: 25px 50px 0px 50px;
+  }
+  .background i {
+    font-size: 1.8em;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .menu_block {
+    width: 75%;
+  }
+}
+/* CSS Desktop */
+@media all and (min-width: 1020px) {
+  .header_arrow {
+    padding: 10px 30px 15px 30px;
+    font-size: 1.5em;
+  }
+
+  .background_img {
+    height: 500px;
+  }
+  .background_title {
+    font-size: 1.3em;
+  }
+
+  .main {
+    display: flex;
+    padding: 0px 30px 20px 30px;
+  }
+
+  .menu_block {
+    width: 95%;
+  }
+  .menu_list-text {
+    overflow: hidden;
+  }
+  .menu h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .menu h3 + p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
