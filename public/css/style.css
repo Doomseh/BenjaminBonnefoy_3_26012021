@@ -58,7 +58,7 @@ header .logo {
   box-shadow: inset 0px 15px 5px -15px gray;
 }
 .localisation i {
-  margin-right: 5%;
+  margin-right: 3%;
 }
 
 /* Information */
@@ -93,11 +93,12 @@ header .logo {
 
 /* Fonctionnement */
 .fonctionnement {
-  padding: 30px 20px;
+  padding: 40px 20px 50px 20px;
 }
 .fonctionnement H2 {
   font-size: 1.7em;
   font-weight: 900;
+  margin-top: 0px;
 }
 
 .step {
@@ -160,6 +161,10 @@ header .logo {
   height: 280px;
   margin-bottom: 20px;
 }
+.restaurants_title {
+  font-size: 1.7em;
+  font-weight: 900;
+}
 
 .choice {
   width: 100%;
@@ -176,9 +181,6 @@ header .logo {
   width: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
-}
-.choice_img-bottom {
-  object-position: bottom;
 }
 .choice_img-center {
   object-position: 50% 60%;
@@ -226,6 +228,68 @@ header .logo {
   background: linear-gradient(to top, #FF79DA, #9356DC);
 }
 
+/* CSS Tablette */
+@media all and (min-width: 750px) {
+  .step {
+    width: 50%;
+  }
+
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Restaurants Tablette */
+  .restaurants_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .restaurants_title {
+    text-align: center;
+  }
+  .restaurants--height {
+    width: 48%;
+    margin-bottom: 30px;
+  }
+
+  /* Footer Tablette */
+  .footer {
+    text-align: center;
+    font-size: 1.2em;
+  }
+}
+/* CSS Desktop */
+@media all and (min-width: 1020px) {
+  .localisation {
+    font-size: 1.3em;
+  }
+
+  .restaurants_title {
+    margin-top: 0px;
+    font-size: 1.8em;
+  }
+  .restaurants--height {
+    height: 400px;
+  }
+
+  .choice_img {
+    height: 80%;
+  }
+  .choice_info {
+    height: 20%;
+  }
+
+  .footer {
+    font-size: 1.4em;
+  }
+}
+@media all and (min-width: 1250px) {
+  .restaurants {
+    padding: 30px 100px;
+  }
+}
 /* Header Menu */
 .header {
   position: relative;
