@@ -251,7 +251,6 @@ header .logo {
     align-items: center;
   }
 
-  /* Restaurants Tablette */
   .restaurants_flex {
     display: flex;
     flex-wrap: wrap;
