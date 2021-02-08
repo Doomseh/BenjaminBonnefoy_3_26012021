@@ -79,6 +79,7 @@ header {
         padding: 10px 15px 10px 30px;
         &:hover {
             background-color: rgb(247, 235, 255);
+            cursor: pointer;
         }
         &-float {
             color: white;
@@ -181,15 +182,10 @@ header {
             display: flex;
             align-self: center;
             margin-right: 20px;
-            i {
-                font-size: 1.6em;
-            }
-        }
-        &-heart:hover {
-            background: linear-gradient(to top , $color-secondary, $color-primary);
         }
     }
 }
+
         /* CSS Tablette */
 
 @media all and (min-width: 750px) {
