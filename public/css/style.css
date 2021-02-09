@@ -72,6 +72,13 @@ body {
   list-style: none;
   margin: 10px 0px;
 }
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
 
 @media all and (min-width: 750px) {
   .footer {
