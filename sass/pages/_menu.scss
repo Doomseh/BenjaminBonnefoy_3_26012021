@@ -78,6 +78,28 @@
             animation-delay: 0.6s;
         }
     }
+    &_flex {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    &_check {
+        background-color: $color-tertiary;
+        border-radius: 0px 15px 15px 0px;
+        width: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4em;
+        transition: width 0.5s;
+        i {
+            transition: transform 0.5s;
+            color: white;
+        }
+    }
     &_title {
         position: relative;
         font-weight: 300;
@@ -97,27 +119,43 @@
         }
     }
     &_list {
+        cursor: pointer;
         opacity: 0;
+        overflow: hidden;
         background-color: white;
         display: flex;
         justify-content: space-between;
         margin: 15px 0px 15px 0px;
         border-radius: 15px;
-        padding: 10px;
         box-shadow: 0px 3px 15px 0px lightgrey;
         animation: Slidemenu 1s forwards;
+        &:hover .menu_check {
+            width: 20%;
+        } 
+        &:hover .fa-check-circle {
+            transform: rotate(360deg);
+        }
         &-price {
             align-self: flex-end;
             font-weight: 900;
             margin: 0px 15px 0px 0px;
+            margin-bottom: 10px;
         }
         &-text {
+            margin: 10px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
             p {
+                overflow: hidden;
+                text-overflow: ellipsis;
                 font-size: 0.95em;
                 font-weight: 300;
                 margin: 5px 0px 0px 0px;
             }
             h3 {
+                overflow: hidden;
+                text-overflow: ellipsis;
                 font-size: 1.1em;
                 margin: 0px;
             }
@@ -196,12 +234,15 @@
             font-size: 1.3em;
         }
     }
+}
+
+@media all and (min-width: 1200px) {
 
     .main {
         display: flex;
         padding: 0px 30px 20px 30px;
     }
-    .menu{
+    .menu {
         &_block {
             width: 95%;
         }

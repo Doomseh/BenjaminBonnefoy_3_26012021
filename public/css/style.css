@@ -492,6 +492,28 @@ header .logo {
 .menu_block :nth-child(4) {
   animation-delay: 0.6s;
 }
+.menu_flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu_check {
+  background-color: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  width: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4em;
+  transition: width 0.5s;
+}
+.menu_check i {
+  transition: transform 0.5s;
+  color: white;
+}
 .menu_title {
   position: relative;
   font-weight: 300;
@@ -511,27 +533,45 @@ header .logo {
   background-color: #99E2D0;
 }
 .menu_list {
+  cursor: pointer;
   opacity: 0;
+  overflow: hidden;
   background-color: white;
   display: flex;
   justify-content: space-between;
   margin: 15px 0px 15px 0px;
   border-radius: 15px;
-  padding: 10px;
   box-shadow: 0px 3px 15px 0px lightgrey;
   animation: Slidemenu 1s forwards;
+}
+.menu_list:hover .menu_check {
+  width: 20%;
+}
+.menu_list:hover .fa-check-circle {
+  transform: rotate(360deg);
 }
 .menu_list-price {
   align-self: flex-end;
   font-weight: 900;
   margin: 0px 15px 0px 0px;
+  margin-bottom: 10px;
+}
+.menu_list-text {
+  margin: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu_list-text p {
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 0.95em;
   font-weight: 300;
   margin: 5px 0px 0px 0px;
 }
 .menu_list-text h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 1.1em;
   margin: 0px;
 }
@@ -597,7 +637,8 @@ header .logo {
   .background_title {
     font-size: 1.3em;
   }
-
+}
+@media all and (min-width: 1200px) {
   .main {
     display: flex;
     padding: 0px 30px 20px 30px;
