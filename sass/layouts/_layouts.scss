@@ -9,7 +9,6 @@
     align-items: center;
     justify-content: center;
     animation: end 0s 3s forwards;
-    -webkit-animation: end 0s 3s forwards;
   }
   
   .dot > div {
@@ -19,26 +18,21 @@
     background-color: white;
     border-radius: 100%;
     display: inline-block;
-    -webkit-animation: dotblick 1s infinite;
     animation: dotblinck 1s infinite;
   }
   
   .dot .bounce1 {
-    -webkit-animation-delay: -0.3s;
     animation-delay: -0.3s;
   }
   
   .dot .bounce2 {
-    -webkit-animation-delay: -0.15s;
     animation-delay: -0.15s;
   }
   
   @keyframes dotblinck {
     0%, 80%, 100% { 
-      -webkit-transform: scale(0);
       transform: scale(0);
     } 40% { 
-      -webkit-transform: scale(1.0);
       transform: scale(1.0);
     }
   }
