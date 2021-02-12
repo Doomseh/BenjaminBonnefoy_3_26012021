@@ -35,7 +35,6 @@ body {
 .fa-heart {
   color: transparent;
   font-size: 1.7em;
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-stroke: 1px black;
 }
@@ -506,19 +505,24 @@ header .logo {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  transition: all 0.5s;
 }
 .menu_check {
   background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
-  width: 0px;
+  position: absolute;
+  width: 70px;
+  height: 100%;
+  right: 0%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.4em;
-  transition: width 0.5s;
+  transform: translateX(70px);
+  transition: transform 0.5s;
 }
 .menu_check i {
-  transition: transform 0.5s;
+  transition: transform 0.5s 0.1s;
   color: white;
 }
 .menu_title {
@@ -552,19 +556,25 @@ header .logo {
   animation: Slidemenu 1s forwards;
 }
 .menu_list:hover .menu_check {
-  width: 20%;
+  transform: translateX(0px);
 }
 .menu_list:hover .fa-check-circle {
   transform: rotate(360deg);
 }
+.menu_list:hover .menu_flex {
+  width: calc(100% - 70px);
+}
+.menu_list:hover .menu_list-price {
+  margin-right: 10px;
+}
 .menu_list-price {
   align-self: flex-end;
   font-weight: 900;
-  margin: 0px 15px 0px 0px;
-  margin-bottom: 10px;
+  margin: 0px 20px 10px 0px;
+  transition: all 0.5s;
 }
 .menu_list-text {
-  margin: 10px;
+  margin: 10px 0px 10px 10px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -645,7 +655,7 @@ header .logo {
     font-size: 1.3em;
   }
 }
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1100px) {
   .main {
     display: flex;
     padding: 0px 30px 20px 30px;
