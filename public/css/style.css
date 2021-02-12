@@ -223,6 +223,9 @@ header .logo {
   opacity: 0.8;
   box-shadow: 0px 5px 5px 5px lightgray;
 }
+.information .btn:focus {
+  outline: none;
+}
 
 /* Fonctionnement */
 .fonctionnement {
@@ -608,6 +611,9 @@ header .logo {
 .bottom_btn:hover {
   opacity: 0.8;
   box-shadow: 0px 5px 5px 5px lightgray;
+}
+.bottom_btn:focus {
+  outline: none;
 }
 
 /* CSS Tablette */
