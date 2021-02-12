@@ -541,6 +541,7 @@ header .logo {
   background-color: #99E2D0;
 }
 .menu_list {
+  position: relative;
   cursor: pointer;
   opacity: 0;
   overflow: hidden;
