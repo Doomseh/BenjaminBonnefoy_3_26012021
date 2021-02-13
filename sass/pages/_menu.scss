@@ -135,16 +135,16 @@
         border-radius: 15px;
         box-shadow: 0px 3px 15px 0px lightgrey;
         animation: Slidemenu 1s forwards;
-        &:hover .menu_check {
+        &:hover .menu_check, &:active .menu_check {
             transform: translateX(0px);
         } 
-        &:hover .fa-check-circle {
+        &:hover .fa-check-circle, &:active .fa-check-circle {
             transform: rotate(360deg);
         }
-        &:hover .menu_flex {
+        &:hover .menu_flex, &:active .menu_flex {
             width: calc(100% - 70px);
         } 
-        &:hover .menu_list-price {
+        &:hover .menu_list-price, &:active .menu_list-price {
             margin-right: 10px;   
         }
         &-price {

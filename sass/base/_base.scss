@@ -17,11 +17,11 @@ body {
     font-size: 1.7em;   
     -webkit-background-clip: text;
     -webkit-text-stroke: 1px black;
-    &:hover {
+    cursor: pointer;
+    &:hover, &:active {
         animation: opacity 800ms;
         -webkit-text-stroke: 0px;
         background-image: linear-gradient(to top right , $color-secondary, $color-primary);
-        cursor: pointer;
     }
 }
 

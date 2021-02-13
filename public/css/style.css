@@ -37,12 +37,12 @@ body {
   font-size: 1.7em;
   -webkit-background-clip: text;
   -webkit-text-stroke: 1px black;
+  cursor: pointer;
 }
-.fa-heart:hover {
+.fa-heart:hover, .fa-heart:active {
   animation: opacity 800ms;
   -webkit-text-stroke: 0px;
   background-image: linear-gradient(to top right, #FF79DA, #9356DC);
-  cursor: pointer;
 }
 
 /* Footer */
@@ -252,10 +252,10 @@ header .logo {
   border-radius: 25px;
   box-shadow: 0px 3px 15px 2px lightgray;
   padding: 10px 15px 10px 30px;
-}
-.step_list:hover {
-  background-color: #f7ebff;
   cursor: pointer;
+}
+.step_list:hover, .step_list:active {
+  background-color: #f7ebff;
 }
 .step_list-float {
   color: white;
@@ -553,16 +553,16 @@ header .logo {
   box-shadow: 0px 3px 15px 0px lightgrey;
   animation: Slidemenu 1s forwards;
 }
-.menu_list:hover .menu_check {
+.menu_list:hover .menu_check, .menu_list:active .menu_check {
   transform: translateX(0px);
 }
-.menu_list:hover .fa-check-circle {
+.menu_list:hover .fa-check-circle, .menu_list:active .fa-check-circle {
   transform: rotate(360deg);
 }
-.menu_list:hover .menu_flex {
+.menu_list:hover .menu_flex, .menu_list:active .menu_flex {
   width: calc(100% - 70px);
 }
-.menu_list:hover .menu_list-price {
+.menu_list:hover .menu_list-price, .menu_list:active .menu_list-price {
   margin-right: 10px;
 }
 .menu_list-price {
