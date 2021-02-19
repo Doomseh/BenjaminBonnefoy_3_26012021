@@ -297,6 +297,8 @@ header .logo {
 .restaurants--height {
   height: 280px;
   margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 3px 15px 0px lightgrey;
 }
 .restaurants_title {
   font-size: 1.7em;
