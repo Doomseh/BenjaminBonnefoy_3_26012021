@@ -33,7 +33,7 @@
         <header>
             <img src="./public/img/ohmyfood.png" alt="Logo ohmyfood" class="logo">
         </header>
-        <main>
+        
             <div class="localisation">
                 <i class="fas fa-map-marker-alt"></i>
                 <p>Paris, Belleville</p>
@@ -45,7 +45,7 @@
                 <div>
                     <H1 class="title">Réservez le menu qui vous convient</H1>
                     <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                    <a href="#results"><button class="btn">Explorer nos restaurants</button></a>
+                    <a href="#results" class="btn">Explorer nos restaurants</a>
                 </div>
             </section>
 
@@ -57,23 +57,24 @@
                     <div class="step_list" onclick="">
                         <p class="step_list-float">1</p>
                         <i class="fas fa-mobile-alt"></i>
-                        <p class="step_list-text">Choisissez un restaurant</p>
+                        <H3 class="step_list-text">Choisissez un restaurant</H3>
                     </div>
                     <div class="step_list" onclick="">
                         <p class="step_list-float">2</p>
                         <i class="fas fa-list-ul"></i>
-                        <p class="step_list-text">Composez votre menu</p>
+                        <H3 class="step_list-text">Composez votre menu</H3>
                     </div>
                     <div class="step_list" onclick="">
                         <p class="step_list-float">3</p>
                         <i class="fas fa-store"></i>
-                        <p class="step_list-text">Dégustez au restaurant</p>
+                        <H3 class="step_list-text">Dégustez au restaurant</H3>
                     </div>
                 </div>
             </section>
 
             <!--Partie Restaurants-->
 
+        <main>
             <section class="restaurants" id="results">
                 <H2 class="restaurants_title">Restaurants</H2>
                 <div class="restaurants_flex">
@@ -86,7 +87,7 @@
                             <div class="choice_info">
                                 <div class="choice_info--text">
                                     <H3>La palette du goût</H3>
-                                    <p>Ménilmontant</p>
+                                    <H4>Ménilmontant</H4>
                                 </div>
                                 <div class="choice_info--i">
                                     <i class="fa fa-heart"></i>
@@ -103,7 +104,7 @@
                             <div class="choice_info">
                                 <div class="choice_info--text">
                                     <H3>La note enchantée</H3>
-                                    <p>Charonne</p>
+                                    <H4>Charonne</H4>
                                 </div>
                                 <div class="choice_info--i">
                                     <i class="fa fa-heart"></i>
@@ -119,7 +120,7 @@
                             <div class="choice_info">
                                 <div class="choice_info--text">
                                     <H3>À la française</H3>
-                                    <p>Cité Rouge</p>
+                                    <H4>Cité Rouge</H4>
                                 </div>
                                 <div class="choice_info--i">
                                     <i class="fa fa-heart"></i>
@@ -135,7 +136,7 @@
                             <div class="choice_info">
                                 <div class="choice_info--text">
                                     <H3>Le délice des sens</H3>
-                                    <p>Folie-Méricourt</p>
+                                    <H4>Folie-Méricourt</H4>
                                 </div>
                                 <div class="choice_info--i">
                                     <i class="fa fa-heart"></i>
@@ -149,18 +150,24 @@
 
             <!--Footer-->
 
-        <footer>
-            <div class="footer">
-                <H3 class="footer_title">ohmyfood</H3>
-                <ul>
-                    <li><i class="fas fa-utensils footer_title-i1"></i> Proposer un restaurant</li>
-                    <li><i class="fas fa-hands-helping footer_title-i2"></i> Devenir partenaire</li>
-                    <li>Mentions légales</li>
-                    <li>
+        <footer class="footer">
+            <H2 class="footer_title">Ohmyfood</H2>
+            <ul>
+                <li>
+                    <i class="fas fa-utensils footer_title-i1"></i><a href="#"> Proposer un restaurant</a>
+                </li>
+                <li>
+                    <i class="fas fa-hands-helping footer_title-i2"></i> <a href="#">Devenir partenaire</a>
+                </li>
+                <li>
+                    <a href="#"> Mentions légales</a>
+                </li>
+                <li>
+                    <address>
                         <a href="mailto:Ohmyfood@hotmail.com">Contact</a>
-                    </li>
-                </ul>
-            </div>
+                    </address>
+                </li>
+            </ul>
         </footer>
     </div>
 </body>
